@@ -10,10 +10,10 @@
 name: 樱花视界
 
 on:
-  #push:
-  #  branches: 
-  #   - master
   # schedule:
+  # push:
+  #   branches: 
+  #     - master
   #   - cron: 0 20 * * *
   # release:
   #   types: [published]

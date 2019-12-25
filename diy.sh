@@ -35,7 +35,7 @@ ln -s ../../luci-theme-argon1.x ./package/
 ln -s ../../luci-app-flowoffload_ADGHome ./package/
 
 #修改lan口地址
-sed -i 's/192.168.1.1/192.168.1.16/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.1.6/g' package/base-files/files/bin/config_generate
 
 #修改机器名称
 sed -i 's/OpenWrt/Sakura-Tv/g' package/base-files/files/bin/config_generate
@@ -58,7 +58,5 @@ sed -i '/exit 0/i\ln -sv /mnt/mmcblk0p1/all /srv/webd/web/SD卡\n' package/lean/
 sed -i '/exit 0/i\chmod 775 /usr/bin/webd' package/lean/default-settings/files/zzz-default-settings
 
 #修改banner
-#rm -rf package/base-files/files/etc/banner
-#cp -f ../banner package/base-files/files/etc/
-#[ -e ../G-DOCK/default.config ] && mv -f ../G-DOCK/default.config .config
-#[ -e ../G-DOCK/*.config ] && mv -f ../G-DOCK/*.config .config
+rm -rf package/base-files/files/etc/banner
+cp -f ../banner package/base-files/files/etc/

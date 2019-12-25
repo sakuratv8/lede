@@ -10,13 +10,11 @@
 name: 樱花视界
 
 on:
-  # schedule:
+  schedule:
+    - cron: 0 20 * * *
   # push:
   #   branches: 
   #     - master
-  #   - cron: 0 20 * * *
-  # release:
-  #   types: [published]
 
 jobs:
 
